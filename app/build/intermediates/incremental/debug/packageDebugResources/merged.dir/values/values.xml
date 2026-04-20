@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#A855F7</color>
+    <color name="colorGold">#FFD700</color>
+    <color name="colorGoldDark">#F0B800</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimary">#2D1B69</color>
+    <color name="colorPrimaryDark">#1A0533</color>
+    <color name="colorPrimaryVariant">#4C2D9E</color>
+    <color name="colorProgress">#FFD700</color>
+    <color name="colorSecondary">#FFD700</color>
+    <color name="colorSwipeRefresh">#A855F7</color>
+    <color name="colorToolbar">#2D1B69</color>
+    <color name="colorToolbarText">#FFFFFF</color>
+    <color name="ic_launcher_background">#050303</color>
+    <color name="splashBackground">#1A0533</color>
+    <color name="splashText">#FFFFFF</color>
+    <color name="splashTextSecondary">#CCE1D5FA</color>
+    <string name="action_about">About</string>
+    <string name="action_home">Home</string>
+    <string name="action_open_browser">Open in Browser</string>
+    <string name="action_rate">Rate App</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_share">Share</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="app_name">NativeWeb</string>
+    <string name="gcm_defaultSenderId" translatable="false">900426978587</string>
+    <string name="google_api_key" translatable="false">AIzaSyAZ6aSOyqMeQbAQPqwlw78faaB7tYg3dL8</string>
+    <string name="google_app_id" translatable="false">1:900426978587:android:4d93aa0396bf0bb15fefbe</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAZ6aSOyqMeQbAQPqwlw78faaB7tYg3dL8</string>
+    <string name="google_storage_bucket" translatable="false">webviewapp-fd4b6.firebasestorage.app</string>
+    <string name="offline_body">Please check your connection\nand try again.</string>
+    <string name="offline_title">No Internet</string>
+    <string name="project_id" translatable="false">webviewapp-fd4b6</string>
+    <string name="retry">Try Again</string>
+    <string name="splash_tagline">YOUR WEB. NATIVE EXPERIENCE.</string>
+    <style name="Theme.WebViewApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="Theme.WebViewApp.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_gradient</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>

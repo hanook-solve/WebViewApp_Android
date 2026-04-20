@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Outer globe circle -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="2.5"
+        android:pathData="M32,8 m-24,0 a24,24 0 1,0 48,0 a24,24 0 1,0 -48,0" />
+
+    <!-- Horizontal equator line -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="2"
+        android:pathData="M8,32 L56,32" />
+
+    <!-- Globe longitude curve -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="2"
+        android:pathData="M32,8 C22,14 18,22 18,32 C18,42 22,50 32,56 C42,50 46,42 46,32 C46,22 42,14 32,8 Z" />
+
+    <!-- Phone body (rectangle as path) -->
+    <path
+        android:fillColor="#2D1B69"
+        android:strokeColor="#A855F7"
+        android:strokeWidth="1.5"
+        android:pathData="M25,22 L39,22 L39,42 L25,42 Z" />
+
+    <!-- Phone screen (rectangle as path) -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M27,25 L37,25 L37,38 L27,38 Z" />
+
+    <!-- Phone home button (circle as path) -->
+    <path
+        android:fillColor="#A855F7"
+        android:pathData="M32,40 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+
+    <!-- Signal wave 1 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M42,26 C44,28 44,30 42,32" />
+
+    <!-- Signal wave 2 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M45,23 C49,27 49,31 45,35" />
+
+</vector>

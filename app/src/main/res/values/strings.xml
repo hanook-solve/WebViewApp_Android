@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NativeWeb</string>
+    <string name="splash_tagline">YOUR WEB. NATIVE EXPERIENCE.</string>
+
+    <!-- Offline page -->
+    <string name="offline_title">No Internet</string>
+    <string name="offline_body">Please check your connection\nand try again.</string>
+    <string name="retry">Try Again</string>
+
+    <!-- Menu -->
+    <string name="action_share">Share</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_home">Home</string>
+    <string name="action_rate">Rate App</string>
+    <string name="action_about">About</string>
+    <string name="action_open_browser">Open in Browser</string>
+
+    <!-- AdMob — REPLACE with your own IDs -->
+    <string name="admob_banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

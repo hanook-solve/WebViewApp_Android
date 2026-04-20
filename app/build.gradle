@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'  // Firebase
+
+}
+
+
+android {
+    namespace 'com.webviewapp'
+    compileSdk 35  // Android 15
+
+    defaultConfig {
+        applicationId "com.webviewapp"
+        minSdk 24           // Android 7.0 — covers 97 %+ of active devices
+        targetSdk 35        // Android 15
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                         'proguard-rules.pro'
+        }
+        debug {
+            versionNameSuffix "-debug"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+dependencies {
+    // ── AndroidX core ──────────────────────────────────────────
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.webkit:webkit:1.12.1'
+
+    // ── Material Design 3 ───────────────────────────────────────
+    implementation 'com.google.android.material:material:1.12.0'
+
+    // ── Firebase BoM — keeps all Firebase versions in sync ─────
+    implementation platform('com.google.firebase:firebase-bom:34.11.0')
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // ── AdMob ───────────────────────────────────────────────────
+    implementation 'com.google.android.gms:play-services-ads:23.5.0'
+}

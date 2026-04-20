@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── NativeWeb Brand Colors ────────────────────────── -->
+
+    <!-- Primary — Deep Purple -->
+    <color name="colorPrimary">#2D1B69</color>
+    <color name="colorPrimaryDark">#1A0533</color>
+    <color name="colorPrimaryVariant">#4C2D9E</color>
+
+    <!-- Secondary — Gold -->
+    <color name="colorSecondary">#FFD700</color>
+    <color name="colorGold">#FFD700</color>
+    <color name="colorGoldDark">#F0B800</color>
+
+    <!-- Accent — Purple -->
+    <color name="colorAccent">#A855F7</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Splash screen -->
+    <color name="splashBackground">#1A0533</color>
+    <color name="splashText">#FFFFFF</color>
+    <color name="splashTextSecondary">#CCE1D5FA</color>
+
+    <!-- Toolbar -->
+    <color name="colorToolbar">#2D1B69</color>
+    <color name="colorToolbarText">#FFFFFF</color>
+
+    <!-- Progress bar -->
+    <color name="colorProgress">#FFD700</color>
+
+    <!-- Swipe refresh -->
+    <color name="colorSwipeRefresh">#A855F7</color>
+</resources>

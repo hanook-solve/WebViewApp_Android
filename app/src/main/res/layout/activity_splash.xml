@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient">
+
+    <!-- Decorative top circle -->
+    <View
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="-100dp"
+        android:background="@drawable/circle_decoration_top" />
+
+    <!-- Decorative bottom circle -->
+    <View
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="-80dp"
+        android:layout_marginStart="-80dp"
+        android:background="@drawable/circle_decoration_bottom" />
+
+    <!-- Center content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Logo container -->
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center">
+
+            <!-- Glow ring -->
+            <View
+                android:id="@+id/splash_glow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/logo_glow_ring"
+                android:alpha="0" />
+
+            <!-- Logo background circle -->
+            <View
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo_circle_bg" />
+
+            <!-- Logo icon -->
+            <ImageView
+                android:id="@+id/splash_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_foreground"
+                android:contentDescription="NativeWeb Logo"
+                android:alpha="0" />
+
+        </FrameLayout>
+
+        <!-- App name -->
+        <TextView
+            android:id="@+id/splash_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NativeWeb"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:layout_marginTop="24dp"
+            android:alpha="0" />
+
+        <!-- Gold divider line -->
+        <View
+            android:id="@+id/splash_divider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/colorGold"
+            android:layout_marginTop="8dp"
+            android:alpha="0" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/splash_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_tagline"
+            android:textColor="#CCE1D5FA"
+            android:textSize="14sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="8dp"
+            android:alpha="0" />
+
+    </LinearLayout>
+
+    <!-- Version at bottom -->
+    <TextView
+        android:id="@+id/splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:text="v1.0.0"
+        android:textColor="#80FFFFFF"
+        android:textSize="12sp"
+        android:alpha="0" />
+
+    <!-- Animated loading dots -->
+    <LinearLayout
+        android:id="@+id/splash_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="64dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:alpha="0">
+
+        <View
+            android:id="@+id/dot1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/loading_dot_active" />
+
+        <View
+            android:id="@+id/dot2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/loading_dot_inactive" />
+
+        <View
+            android:id="@+id/dot3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/loading_dot_inactive" />
+
+    </LinearLayout>
+
+</FrameLayout>
